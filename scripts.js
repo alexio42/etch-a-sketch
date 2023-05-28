@@ -28,7 +28,7 @@ function removeElementsByClass(className){
 
 function createPixels(number) {
   let total = squareSize(number)
-  let width = pixelSize(number).toFixed(2);
+  let width = pixelSize(number).toFixed(3);
   for (let i = 0; i < total; i++) {
     let pixel = document.createElement('div');
     pixel.classList.add('pixel');
@@ -46,19 +46,19 @@ function hoverEffect() {
   })
 };
 
+
 function pixelSize(number) {
   return 100 / number;
 }
 
 function userInput() {
-  let number = prompt("Enter number", "");
+  let number = prompt("Enter a number (max 100)", "");
   if (number > 100 || number < 1) {
     alert("Please enter number between 1-100");
     userInput();
   } else {
     removeElementsByClass('pixel');
     createPixels(number);
-    console.log(pixelSize(number).toFixed(2));
     hoverEffect();
   }
 };
