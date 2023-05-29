@@ -4,6 +4,10 @@
   padding: 0; 
 }*/
 
+body {
+  background-color: lightblue;
+}
+
 h1 {
   text-align: center;
   font-size: 40px;
@@ -15,8 +19,10 @@ h1 {
   gap: 0;
   justify-content: center;
   align-items: center; 
-  padding: 10px;
+  padding: 0;
   margin: auto;
+  padding: 3px;
+  background-color: grey;
   border-width: 20px 80px;
   border-color: red;
   border-style: solid;
@@ -29,7 +35,7 @@ h1 {
   flex-basis: 6.25%;
   gap: 0;
   margin: 0;
-  background-color: aqua;
+  background-color: white;
   height: 6.25%;
   color: red;
   display: flex;
@@ -46,6 +52,6 @@ h1 {
   padding: 5px;
 }
 
-#size-button {
+button {
   font-size: 20px;
 }
